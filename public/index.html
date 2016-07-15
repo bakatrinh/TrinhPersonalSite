@@ -12,6 +12,7 @@
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+
 	<nav class="navbar navbar-default">
 		<div class="container">
 			<div class="navbar-header">
@@ -24,16 +25,16 @@
 			</div>
 			<div class="collapse navbar-collapse" id="fullNav">
 				<ul class="nav navbar-nav navbar-left">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Resume</a></li>
+					<li class="active"><a href="#tab-1" data-toggle="tab">Home</a></li>
+					<li><a href="#tab-2" data-toggle="tab">Resume</a></li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects & Games<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Web Based</a></li>
-							<li><a href="#">Java</a></li>
+							<li><a href="#tab-3" data-toggle="tab">Web Based</a></li>
+							<li><a href="#tab-4" data-toggle="tab">Java</a></li>
 						</ul>
 					</li>
-					<li><a href="/contact.html">Contact</a></li>
+					<li><a href="#tab-5" data-toggle="tab">Contact</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right nav-pills">
 					<li><a href="https://github.com/bakatrinh/"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
@@ -43,52 +44,116 @@
 			</div>
 		</div>
 	</nav>
-	<section class="jumbotron" style="background-image: url('../images/jumbotron_wallpaper6.jpg')">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-8">
-					<h2>Welcome to Trinh's site</h2>
-					<h3>Trinh is currently studying Computer Science at SJSU.</h3>
-					<h3>Trinh's hobbies includes: cats, tv shows, and videogames.</h3>
-				</div>
 
-			</div>
-		</section>
+	<div class="tab-content">
 
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3">
-					<h3>Current Activities:</h3>
-					<ul>
-						<li>Contract work for Luova Design (PHP, MySQL)</li>
-						<li>Learning NodeJS and Bootstrap</li>
-					</ul>
+
+		<div class="tab-pane active" id="tab-1">
+			<section class="jumbotron customsplash" style="background-image: url('../images/jumbotron_wallpaper6.jpg');">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8">
+							<h2>Welcome to Trinh's site</h2>
+							<h3>Trinh is currently studying Computer Science at SJSU.</h3>
+							<h3>Trinh's hobbies includes: cats, tv shows, and videogames.</h3>
+						</div>
+					</div>
 				</div>
-				<div class="col-sm-3">
-					<h3>Recently Accomplished Tasks:</h3>
-					<ul>
-						<li>Self taught basic Javascript, CSS, and HTML</li>
-						<li>Completed Junior year at SJSU</li>
-					</ul>
+			</section>
+
+			<section class="jumbotron customcontent" style="background-color: #ccf5ff;">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3">
+							<h3>Current Activities:</h3>
+							<ul>
+								<li>Contract work for Luova Design (PHP, MySQL)</li>
+								<li>Learning NodeJS and Bootstrap</li>
+							</ul>
+						</div>
+						<div class="col-sm-3">
+							<h3>Recently Accomplished Tasks:</h3>
+							<ul>
+								<li>Self taught basic Javascript, CSS, and HTML</li>
+								<li>Completed Junior year at SJSU</li>
+							</ul>
+						</div>
+						<div class="col-sm-3">
+							<h3>Planned Future Tasks:</h3>
+							<ul>
+								<li>Design Javascript based game</li>
+								<li>Continue refining and improving on current skillsets</li>
+							</ul>
+						</div>
+						<div class="col-sm-3">
+							<h3>Current Skills:</h3>
+							<ul>
+								<li>Javascript</li>
+								<li>PHP</li>
+								<li>Java</li>
+								<li>MySQL</li>
+								<li>and more</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class="col-sm-3">
-					<h3>Planned Future Tasks:</h3>
-					<ul>
-						<li>Design Javascript based game</li>
-						<li>Continue refining and improving on current skillsets</li>
-					</ul>
+			</section>
+		</div>
+
+
+		<div class="tab-pane" id="tab-2">
+			<section class="jumbotron customsplash" style="background-color: #99ebff;">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8">
+							<h2>Resume</h2>
+						</div>
+					</div>
 				</div>
-				<div class="col-sm-3">
-					<h3>Current Skills:</h3>
-					<ul>
-						<li>Javascript</li>
-						<li>PHP</li>
-						<li>Java</li>
-						<li>MySQL</li>
-						<li>and more</li>
-					</ul>
+			</section>
+		</div>
+
+
+		<div class="tab-pane" id="tab-3">
+			<section class="jumbotron customsplash" style="background-color: #ffb3cc;">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8">
+							<h2>Web Based</h2>
+						</div>
+					</div>
 				</div>
+			</section>
+		</div>
+
+
+		<div class="tab-pane" id="tab-4">
+			<section class="jumbotron customsplash" style="background-color: #b3e6cc;">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8">
+							<h2>Java</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<div class="tab-pane" id="tab-5">
+			<section class="jumbotron customsplash" style="background-image: url('../images/jumbotron_wallpaper7.jpg'); ">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8">
+							<h2 style="color:white;">Trinh can be reached at:</h2>
+							<h3 style="color:white;">Cellphone: (310) 706-5321</h3>
+							<h3 style="color:white;">Email: trinh.d.nguyen@sjsu.edu</h3>
+						</div>
+					</div>
+				</section>
 			</div>
+
+
 		</div>
 	</body>
 	</html>

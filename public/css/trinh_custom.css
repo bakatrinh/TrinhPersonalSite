@@ -100,25 +100,31 @@ i:hover {
   color: #dd5e25;
 }
 
-.jumbotron {
+.customsplash {
   display: flex;
   align-items: center;
   background-size: cover;
   height: 400px;
   text-shadow: -1px 0 #000000, 0 -1px #000000;
-  margin-bottom: 0;
   border-bottom: 4px solid #dd5e25;
+  margin-bottom: 0;
   color: #ffffff;
 }
 
+.customcontent {
+  background-size: cover;
+  margin-bottom: 0;
+  border-bottom: 2px solid #dd5e25;
+}
+
 @font-face {
-    font-family: Futura;
-    src: url(../fonts/ufonts.com_futura-medium.ttf);
+  font-family: Futura;
+  src: url(../fonts/ufonts.com_futura-medium.ttf);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Futura, Helvetica, sans-serif;
+  font-family: Futura, Helvetica, sans-serif;
 }
 p, div {
-    font-family: Futura, Helvetica, sans-serif;
+  font-family: Futura, Helvetica, sans-serif;
 }
