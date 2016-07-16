@@ -100,7 +100,7 @@ i:hover {
   color: #dd5e25;
 }
 
-.customsplash {
+.custom-splash {
   display: flex;
   align-items: center;
   background-size: cover;
@@ -111,7 +111,7 @@ i:hover {
   color: #ffffff;
 }
 
-.customcontent {
+.custom-content {
   background-size: cover;
   margin-bottom: 0;
   border-bottom: 2px solid #dd5e25;
@@ -127,4 +127,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, div {
   font-family: Futura, Helvetica, sans-serif;
+}
+
+hr-black {
+  display: block;
+  height: 0px;
+  border: 0;
+  border-top: 1px solid black;
+  margin: 1em 0;
+  padding: 0; 
+}
+
+hr-grey {
+  display: block;
+  height: 0px;
+  border: 0;
+  border-top: 1px solid #bfbfbf;
+  margin: 1em 0;
+  padding: 0; 
 }
