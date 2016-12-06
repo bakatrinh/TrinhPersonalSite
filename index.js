@@ -18,11 +18,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 // });
 
 app.get('/bug', function(req,res){
-	res.redirect('http://www.bakatrinh.com/buggerwars/');
+	var fullUrl = req.protocol + '://' + req.get('host') + '/buggerwars/';
+	console.log(fullUrl);
+	res.redirect(fullUrl);
 });
 
 app.get('/bugger', function(req,res){
-	res.redirect('http://www.bakatrinh.com/buggerwars/');
+	var fullUrl = req.protocol + '://' + req.get('host') + '/buggerwars/';
+	console.log(fullUrl);
+	res.redirect(fullUrl);
 });
 
 // app.get('/', function(request, response) {
