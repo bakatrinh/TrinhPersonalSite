@@ -12,12 +12,8 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.get('/html5game/BuggerWars.js', function(req, res, next) {  
-//     filePath = __dirname + '/public/buggerwars/html5game/BuggerWars.js';
-//     res.sendFile(filePath);
-// });
-
 app.get('/bug', function(req,res){
+	//var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
 	var fullUrl = req.protocol + '://' + req.get('host') + '/buggerwars/';
 	//console.log(fullUrl);
 	res.redirect(fullUrl);
