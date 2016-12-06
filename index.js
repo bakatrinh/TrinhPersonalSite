@@ -12,15 +12,17 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+// app.get('/html5game/BuggerWars.js', function(req, res, next) {  
+//     filePath = __dirname + '/public/buggerwars/html5game/BuggerWars.js';
+//     res.sendFile(filePath);
+// });
+
 app.get('/bug', function(req,res){
-	//console.log(__dirname);
-    filePath = __dirname + '/public/buggerwars/index.html';
-    res.sendFile(filePath);
+	res.redirect('http://www.bakatrinh.com/buggerwars/');
 });
 
 app.get('/bugger', function(req,res){
-    filePath = __dirname + '/public/buggerwars/index.html';
-    res.sendFile(filePath);
+	res.redirect('http://www.bakatrinh.com/buggerwars/');
 });
 
 // app.get('/', function(request, response) {
