@@ -200,3 +200,13 @@ hr-grey {
 .ul-custom {
   list-style-position: inside;
 }
+
+.img-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0px; height: 0; overflow: hidden;
+}
+
+.img-custom {
+  border: 2px solid white;
+}
