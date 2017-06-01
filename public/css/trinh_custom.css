@@ -211,7 +211,12 @@ hr-grey {
   max-width: 100%;
   max-height: 100%;
 }
+
 .center {
   display: block;
   margin: auto;
+}
+
+.white-border {
+  border: 2px solid white;
 }
