@@ -111,6 +111,15 @@ i:hover {
   color: #ffffff;
 }
 
+.custom-content-list {
+  display: flex;
+  background-size: cover;
+  text-shadow: -1px 0 #000000, 0 -1px #000000;
+  border-bottom: 4px solid #dd5e25;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
 .custom-content {
   background-size: cover;
   margin-bottom: 0;
@@ -145,4 +154,49 @@ hr-grey {
   border-top: 1px solid #bfbfbf;
   margin: 1em 0;
   padding: 0; 
+}
+
+.custom_a {
+  color: #000000;
+  text-decoration: none;
+  font-family: Futura, Helvetica, sans-serif;
+  text-shadow: none;
+}
+.custom_a:hover,
+.custom_a:focus {
+  color: #000000;
+  text-decoration: none;
+  font-family: Futura, Helvetica, sans-serif;
+  text-shadow: none;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+  border: 2px solid white;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.h2-custom {
+  color: #000000;
+  text-shadow: none;
+}
+
+.h4-custom {
+  color: #000000;
+  text-shadow: none;
+}
+
+.ul-custom {
+  list-style-position: inside;
 }
